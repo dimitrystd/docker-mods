@@ -1,3 +1,4 @@
+# shellcheck disable=SC1090,SC2034,SC2086
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -62,6 +63,7 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+# shellcheck disable=SC1091
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
