@@ -5,6 +5,10 @@ This mod adds Home Assistant related add-ons to code-server, to be installed/upd
 In code-server docker arguments, set an environment variable `DOCKER_MODS=linuxserver/mods:code-server-python3|ghcr.io/stecky/mods:code-server-home-assistant`
 
 # How to update and build
+Update versions in `requirements.txt` and `vscode.extensions` files. You can also check for versions in the official hassio addon.
+- https://github.com/hassio-addons/addon-vscode/blob/main/vscode/requirements.txt
+- https://github.com/hassio-addons/addon-vscode/blob/main/vscode/vscode.extensions
+
 I built docker and pushed it manually
 ```
 docker login
