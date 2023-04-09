@@ -1,5 +1,8 @@
 #!/usr/bin/with-contenv bash
 
+# Fix for invalid signature
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+
 apt-get update && apt-get install -y \
     ack \
     libarchive-tools \
@@ -19,7 +22,8 @@ apt-get update && apt-get install -y \
     python3 \
     wget \
     uuid-runtime \
-    zsh
+    zsh \
+    uuid-runtime
 
 sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
 locale-gen

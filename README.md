@@ -11,6 +11,7 @@ Update versions in `requirements.txt` and `vscode.extensions` files. You can als
 
 I built docker and pushed it manually
 ```
+cd <repository path>/docker-mods/docker-mods
 docker login
 docker build --no-cache -t dmitriy/mods:code-server-home-assistant .
 docker push dmitriy/mods:code-server-home-assistant
